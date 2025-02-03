@@ -1,7 +1,7 @@
 /* ตั้งค่าพื้นหลังเป็นสีพาสเทล */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #ffdde1, #ee9ca7); /* สีชมพูพาสเทล */
+    background-color: #f9b9d7; /* สีชมพูธรรมดา */
     text-align: center;
     padding: 20px;
 }
