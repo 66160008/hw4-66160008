@@ -1,12 +1,101 @@
+/* ตั้งค่าพื้นหลังเป็นสีพาสเทล */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffdde1, #ee9ca7); /* สีชมพูพาสเทล */
+    text-align: center;
+    padding: 20px;
+}
+
+/* กล่องหลักที่อยู่ตรงกลาง */
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ทำให้แสดงเอฟเฟกต์ขอบน่ารัก */
+.container::before {
+    content: "✨ แบบทดสอบน่ารัก ✨";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff9a9e;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ปุ่ม */
+button {
+    background: #ffb6c1; /* ชมพูพาสเทล */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff9aa2;
+}
+
+/* ซ่อนองค์ประกอบที่ยังไม่ต้องแสดง */
 .hidden {
     display: none;
 }
-.container {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-}
-button {
+
+/* นาฬิกานับเวลาถอยหลัง */
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6f61;
     padding: 10px;
-    margin-top: 10px;
+}
+
+/* กล่องคำถาม */
+#questionContainer {
+    text-align: left;
+    margin-top: 15px;
+    background: #ffe6e9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* สไตล์ตัวเลือกคำตอบ */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* กล่องผลลัพธ์ */
+#resultContainer {
+    background: #ffdde1;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* เอฟเฟกต์เมื่อโหลดหน้า */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
