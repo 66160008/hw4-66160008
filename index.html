@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบควิซออนไลน์</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>แบบทดสอบออนไลน์</h1>
+        <button id="startQuiz">เริ่มทำแบบทดสอบ</button>
+        <div id="quizContainer" class="hidden">
+            <p id="timer">เวลาที่เหลือ: <span id="timeLeft"></span> วินาที</p>
+            <div id="questionContainer"></div>
+            <button id="submitQuiz">ส่งคำตอบ</button>
+        </div>
+        <div id="resultContainer" class="hidden">
+            <h2>ผลลัพธ์</h2>
+            <p id="score"></p>
+            <button id="restartQuiz">ทำแบบทดสอบอีกครั้ง</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
